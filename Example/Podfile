@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'LVBasicModule_Example' do
+  pod 'LVBasicModule', :path => '../'
+
+  target 'LVBasicModule_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
